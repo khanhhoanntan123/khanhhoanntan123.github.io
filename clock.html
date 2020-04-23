@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="clock.css">
+	<script src="https://kit.fontawesome.com/64e2c0faba.js"></script>
+	<script src="clock.js"></script>
+	<title> I love u</title>
+</head>
+
+<body>
+	<div class="container">
+		<img src="nhi1.png"> <img src="tan.png">
+		<h1> How long have we known each other? </h1>
+		<div class = "hello">
+			<p id = "demo">  </p>
+		</div>
+		<script>
+			var y = new Date("Feb 17, 2020 21:06:00").getTime();
+			setInterval(function(){
+				var x = new Date().getTime();
+				var z = x - y;
+				var day = Math.floor(z / 86400000); 
+				var h = Math.floor((z % 86400000) / 3600000); 
+				var m = Math.floor((z % 3600000) / 60000);
+				var s = Math.floor((z % 60000) / 1000);
+				if(h < 10)
+					h = "0" + h;
+				if(m < 10)
+					m = "0" + m;
+				if(s < 10)
+					s = "0" + s;
+				day += "D";
+				h += "H";
+				m += "M"
+				s += "S";
+				var res;
+				document.getElementById("demo").innerHTML = day + "<span style=\"margin:0px 20px;\"></span> " + h +  "<span style=\"margin:0px 20px;\"></span> " + m +  "<span style=\"margin:0px 20px;\"></span> " + s;
+			} ,1000);
+		</script>
+	</div>
+</body>
+
+</html>
