@@ -5,7 +5,7 @@
 body{
 	margin: 0px;
 	padding: 0px;
-	background: url("2.jpg") no-repeat;
+	background: url("4.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -33,7 +33,7 @@ body{
 
 .box h5{
 	font-size: 120%;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
 
 .box p{
