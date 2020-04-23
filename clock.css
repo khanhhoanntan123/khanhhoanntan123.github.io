@@ -1,0 +1,38 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+	background: url("1.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}	
+
+.container{
+	width: 50%;
+	height: 20%;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding : 2px;
+	text-align: center;
+	margin: auto;
+	margin-top: 5%;
+	color: white;
+}
+
+.container img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.container h1{
+	font-size: 300%;
+	letter-spacing: 2px;
+}
+
+
+#demo{
+	font-size: 400%;
+}
